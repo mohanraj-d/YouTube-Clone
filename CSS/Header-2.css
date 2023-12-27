@@ -1,0 +1,65 @@
+.header-2 {
+	background-color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+	position: fixed;
+	top: 70px;
+	left: 220px;
+	right: 0;
+	height: 56px;
+	padding: 0 36px;
+  z-index: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.header-2::-webkit-scrollbar {
+  width: 0;
+}
+
+.header-2 div {
+  display: flex;
+	align-items: center;
+  height: 32px;
+	padding: 0 12px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+	border-radius: 10px;
+	background-color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: background-color 0.15s;
+	cursor: pointer;
+  position: relative;
+}
+
+.header-2 div:hover {
+	background-color: rgb(225, 225, 225);
+}
+
+.header-2 #all {
+  color: white;
+  background-color: black;
+}
+.header-2 .all:hover {
+  background-color: black;
+}
+
+/* Tooltip */
+
+.header-2 .tooltip {
+  background-color: black;
+	color: white;
+	position: absolute;
+	bottom: -20px;
+	padding: 10px;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 4px;
+	/* opacity: 0; */
+	transition: opacity 0.3s;
+	pointer-events: none;
+	text-wrap: nowrap;
+}
