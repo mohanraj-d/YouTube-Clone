@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YouTube clone</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="CSS/Video.css" />
+		<link rel="stylesheet" href="CSS/Common.css" />
+		<link rel="stylesheet" href="CSS/Header-1.css" />
+		<link rel="stylesheet" href="CSS/Header-2.css" />
+		<link rel="stylesheet" href="CSS/Sidebar.css" />
+		<link rel="stylesheet" href="CSS/Shorts.css" />
+		<link rel="stylesheet" href="CSS/Responsive.css" />
+		<link rel="stylesheet" href="CSS/Footer.css" />
+	</head>
+	<body>
+		<!-- Header-1 -->
+		<header class="header-1">
+			<div class="header-left">
+				<button class="menu-icon">
+					<img
+						style="margin: 0 auto; width: 30px"
+						class="menu-icon-img"
+						src="Icons/hamburger-menu-5.svg"
+					/>
+				</button>
+				<!-- <input
+					class="menu-toggle"
+					id="menu-toggle"
+					type="checkbox"
+					style="display: none"
+				/>
+				<label
+					for="menu-toggle"
+					class="menu-icon"
+					style="font-size: 24px; cursor: pointer"
+					>&#9776;</label
+				> -->
+				<div class="youtube-logo">
+					<img
+						style="width: 100px"
+						class="youtube-logo-img"
+						src="Icons/1280px-YouTube_Premium_logo.svg.png"
+					/>
+					<div>IN</div>
+				</div>
+			</div>
+
+			<div class="header-middle">
+				<div class="search-box">
+					<input type="text" placeholder="Search" />
+					<img
+						style="width: 22px"
+						class="search-icon-img-focus"
+						src="Icons/icons8-search-48.png"
+					/>
+				</div>
+				<button class="search-icon">
+					<img
+						style="width: 26px"
+						class="search-icon-img"
+						src="Icons/icons8-search-48.png"
+					/>
+					<div class="tooltip">Search</div>
+				</button>
+				<div class="voice-search-icon">
+					<img
+						style="width: 22px"
+						class="voice-search-icon-img"
+						src="Icons/voice-search-icon-2.png"
+					/>
+					<div class="tooltip">Search with your voice</div>
+				</div>
+			</div>
+
+			<div class="header-right">
+				<div class="upload-icon">
+					<img class="upload-icon-img" src="Icons/video-add-line.svg" />
+					<div style="bottom: -40px" class="tooltip">Create</div>
+				</div>
+				<div style="position: relative" class="notification-icon">
+					<img
+						style="width: 24px"
+						class="notification-icon-img"
+						src="Icons/notification-30.svg"
+					/>
+					<div class="notification-num">9+</div>
+					<div class="tooltip">Notifications</div>
+				</div>
+				<div class="user-profile">
+					<img
+						style="
+							width: 32px;
+							margin-right: 25px;
+							margin-left: 8px;
+							border-radius: 20px;
+						"
+						class="user-profile-img"
+						src="Profile-pics/Cat.jpg"
+					/>
+				</div>
+			</div>
+
+			<div class="header-right-mobile">
+				<div class="search-icon-mobile">
+					<img
+						class="search-icon-mobile-img"
+						src="Icons/icons8-search-48.png"
+					/>
+				</div>
+				<div class="user-profile-mobile">
+					<img class="user-profile-img" src="Profile-pics/Cat.jpg" />
+				</div>
+			</div>
+		</header>
+
+		<!-- Header-2 -->
+		<header class="header-2">
+			<section id="compass-div">
+				<img class="compass-img" src="Icons/compass.png" />
+			</section>
+			<div id="all">All</div>
+			<div>Gaming</div>
+			<div>Gaming computers</div>
+			<div>CSS</div>
+			<div>Computers</div>
+			<div>Music</div>
+			<div>User interface design</div>
+			<div>Live</div>
+			<div>Bodyweight exercises</div>
+			<div>Mixes</div>
+			<div>Machine Learning</div>
+			<div>Trailers</div>
+			<div>Rockstar Games</div>
+			<div>AI</div>
+			<div>Mobile Phones</div>
+			<div>Tamil Cinema</div>
+			<div>News</div>
+			<div>Anime</div>
+			<div>Recently uploaded</div>
+			<div>Watched</div>
+			<div>New to you</div>
+		</header>
+
+		<!-- Side bar -->
+		<nav class="sidebar">
+			<div class="sidebar-top">
+				<div class="icon" id="home">
+					<div class="icon-img-div">
+						<img style="width: 24px" class="icon-img" src="Icons/s-home.svg" />
+					</div>
+					<p class="icon-text">Home</p>
+					<div class="tooltip">Home</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-youtube-shorts-24.png"
+						/>
+					</div>
+					<p class="icon-text">Shorts</p>
+					<div class="tooltip">Shorts</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons//menu_youtube_subscription_icon_197393.png"
+						/>
+					</div>
+					<p class="icon-text">Subscriptions</p>
+					<div class="tooltip">Subscriptions</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-youtube-music-50.png"
+						/>
+					</div>
+					<p class="icon-text">YouTube Music</p>
+					<div class="tooltip">YouTube Music</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div class="sidebar-you">
+				<div class="icon">
+					<div class="icon-img-div">
+						<p style="font-size: 16px; font-weight: 500">You</p>
+					</div>
+					<img style="width: 11px" src="Icons/right-arrow-9.svg" />
+					<div class="tooltip">You</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/icons8-person-64.png"
+						/>
+					</div>
+					<p class="icon-text">Your channel</p>
+					<div class="tooltip">Your channel</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-history-32.png"
+						/>
+					</div>
+					<p class="icon-text">History</p>
+					<div class="tooltip">History</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/video-259.svg"
+						/>
+					</div>
+					<p class="icon-text">Your videos</p>
+					<div class="tooltip">Your videos</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-bulb-50.png"
+						/>
+					</div>
+					<p class="icon-text">Your courses</p>
+					<div class="tooltip">Your courses</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 21px"
+							class="icon-img"
+							src="Icons/watch-later-1.svg"
+						/>
+					</div>
+					<p class="icon-text">Watch later</p>
+					<div class="tooltip">Watch later</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-download-32.png"
+						/>
+					</div>
+					<p class="icon-text">Downloads</p>
+					<div class="tooltip">Downloads</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 18px"
+							class="icon-img"
+							src="Icons/down-arrow-5.svg"
+						/>
+					</div>
+					<p class="icon-text">Show more</p>
+					<div class="tooltip">Show more</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div class="sidebar-subscriptions">
+				<div class="Subscriptions-text">Subscriptions</div>
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/ytc/AIf8zZRqP8OhIubpWPHtNoV_q_3jOPF_j57EmsZonz_A=s68-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">A2D Channel</p>
+					<div class="tooltip">A2D Channel</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/qZ6E1WupM_Kzory2I8WVG6aNKDAg2Je7HwdRiSBH59Qh7naGv6nnYKNHgboRIaHgMv1T9s95=s88-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">HOUSE OF MAV...</p>
+					<div class="tooltip">HOUSE OF MAVRICK</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/ytc/AIf8zZRON6Ftjy2pWP-z60XjkWf93lu_wZt1nqb_emhb=s88-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">Almost Everything</p>
+					<div class="tooltip">Almost Everything</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/s2-ytWDMQdBmZHLX88xBVdbNg9OS9RJxmpvnhTizxbiLAhu7cKdoo8a_oyhVZdTUs7p-kcWTDFw=s88-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">HR_Navin</p>
+					<div class="tooltip">HR_Navin</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/ytc/AIf8zZSoN0PkqajCSfsSJT8C0zd9kgJ5zI-JR_K7BOJ3=s68-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">SuperSimpleDev</p>
+					<div class="tooltip">SuperSimpleDev</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/ytc/AIf8zZSYZm1hFxUl7H1gYa67XRB2C-SclRLhALlq4BtpIg=s68-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">Jeremy Ethier</p>
+					<div class="tooltip">Jeremy Ethier</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px; border-radius: 12px"
+							class="icon-img"
+							src="https://yt3.ggpht.com/ytc/AIf8zZR3U_kBnTsq2jRfkeevBxrXUVLIi0QT4cTZbKFasw=s88-c-k-c0x00ffffff-no-rj"
+						/>
+					</div>
+					<p class="icon-text">Otaku Den</p>
+					<div class="tooltip">Otaku Den</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 18px"
+							class="icon-img"
+							src="Icons/down-arrow-5.svg"
+						/>
+					</div>
+					<p class="icon-text">Show 16 more</p>
+					<div class="tooltip">Show 16 more</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div class="sidebar-explore">
+				<div class="explore-text">Explore</div>
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-trending-32.png"
+						/>
+					</div>
+					<p class="icon-text">Trending</p>
+					<div class="tooltip">Trending</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/shopping-133.svg"
+						/>
+					</div>
+					<p class="icon-text">Shopping</p>
+					<div class="tooltip">Shopping</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-song-64.png"
+						/>
+					</div>
+					<p class="icon-text">Music</p>
+					<div class="tooltip">Music</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/icons8-movie-50.png"
+						/>
+					</div>
+					<p class="icon-text">Movies</p>
+					<div class="tooltip">Movies</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img style="width: 24px" class="icon-img" src="Icons/live-17.svg" />
+					</div>
+					<p class="icon-text">Live</p>
+					<div class="tooltip">Live</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/youtube-gamepad.png"
+						/>
+					</div>
+					<p class="icon-text">Gaming</p>
+					<div class="tooltip">Gaming</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-news-32.png"
+						/>
+					</div>
+					<p class="icon-text">News</p>
+					<div class="tooltip">News</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/icons8-trophy-48.png"
+						/>
+					</div>
+					<p class="icon-text">Sports</p>
+					<div class="tooltip">Sports</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/icons8-bulb-50.png"
+						/>
+					</div>
+					<p class="icon-text">Learning</p>
+					<div class="tooltip">Learning</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/icons8-cloakroom-64.png"
+						/>
+					</div>
+					<p class="icon-text">Fashion $ Beauty</p>
+					<div class="tooltip">Fashion $ Beauty</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/podcast-16.svg"
+						/>
+					</div>
+					<p class="icon-text">Podcasts</p>
+					<div class="tooltip">Podcasts</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/icons8-board-game-32.png"
+						/>
+					</div>
+					<p class="icon-text">Playables</p>
+					<div class="tooltip">Playables</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div class="sidebar-more-from-youtube">
+				<div class="more-from-youtube-text">More from YouTube</div>
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 27px"
+							class="icon-img"
+							src="Icons/icons8-youtube-studio-48.png"
+						/>
+					</div>
+					<p class="icon-text">YouTube Studio</p>
+					<div class="tooltip">YouTube Studio</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 23px"
+							class="icon-img"
+							src="Icons/Youtube_Music_icon.svg.png"
+						/>
+					</div>
+					<p class="icon-text">YouTube Music</p>
+					<div class="tooltip">YouTube Music</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 30px"
+							class="icon-img"
+							src="Icons/youtube-kids.png"
+						/>
+					</div>
+					<p class="icon-text">YouTube Kids</p>
+					<div class="tooltip">YouTube Kids</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div style="margin-top: 12px" class="sidebar-bottom">
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 22px"
+							class="icon-img"
+							src="Icons/settings-85.svg"
+						/>
+					</div>
+					<p class="icon-text">Settings</p>
+					<div class="tooltip">Settings</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/flag-flag.svg"
+						/>
+					</div>
+					<p class="icon-text">Report history</p>
+					<div class="tooltip">Report history</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/question-mark-12.svg"
+						/>
+					</div>
+					<p class="icon-text">Help</p>
+					<div class="tooltip">Help</div>
+				</div>
+
+				<div class="icon">
+					<div class="icon-img-div">
+						<img
+							style="width: 24px"
+							class="icon-img"
+							src="Icons/feedback.png"
+						/>
+					</div>
+					<p class="icon-text">Send feedback</p>
+					<div class="tooltip">Send feedback</div>
+				</div>
+			</div>
+
+			<div style="border-bottom: 1px solid rgb(225, 224, 224)"></div>
+
+			<div class="sidebar-copyright">
+				<div class="sidebar-copyright-text">
+					<div class="sidebar-copyright-text-column">
+						<div class="sidebar-copyright-text-row">
+							<a href="">About</a>
+							<a href="">Press</a>
+							<a href="">Copyright</a>
+						</div>
+
+						<div class="sidebar-copyright-text-row">
+							<a href="">Contact us</a>
+							<a href="">Creators</a>
+						</div>
+
+						<div class="sidebar-copyright-text-row">
+							<a href="">Advertise</a>
+							<a href="">Developers</a>
+						</div>
+					</div>
+
+					<div class="sidebar-copyright-text-column">
+						<div class="sidebar-copyright-text-row">
+							<a href="">Terms</a>
+							<a href="">Privacy</a>
+							<a href="">Policy & Safety</a>
+						</div>
+
+						<div class="sidebar-copyright-text-row">
+							<a href="">How YouTube works</a>
+						</div>
+
+						<div class="sidebar-copyright-text-row">
+							<a href="">Test new features</a>
+						</div>
+					</div>
+
+					<div class="sidebar-copyright-text-column">
+						<p>&copy; 2023 Google LLC</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Videos-1 -->
+		<div class="video-grid">
+			<!-- Video-1  -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/0P9VX7tGdUU?si=7bpb1cHvwc8VDxvK"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/0P9VX7tGdUU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHoj0z2TtiRem755l18yYxl5Xh3Q"
+					/></a>
+					<div>13:01</div>
+				</div>
+				<a href="https://youtu.be/0P9VX7tGdUU?si=7bpb1cHvwc8VDxvK">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile" style="position: relative">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZRqP8OhIubpWPHtNoV_q_3jOPF_j57EmsZonz_A=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">A2D Channel</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>
+									5 Lakh WATERCOOLED 🌊 PC Build RTX 4090 PC Setup | Chinese...
+								</p>
+								<div class="tooltip">
+									5 Lakh WATERCOOLED 🌊 PC Build - RTX 4090 PC Setup | Chinese
+									Waterblock PC Custom Loop Setup
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>A2D Channel</p>
+									<div class="tooltip">A2D Channel</div>
+								</div>
+								<div>
+									<p class="video-status">
+										190k views <strong>&#183;</strong> 1 day ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							<div class="three-dot-tooltip">
+								<p>one</p>
+								<p>one</p>
+								<p>one</p>
+								<p>one</p>
+								<p>one</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-2  -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/Ka77djMkSwg?si=5yxzBQfwzxlk0unG"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/Ka77djMkSwg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCDv7tEijmYmsRAfO_z-_eWjftZng"
+					/></a>
+					<div>8:06</div>
+				</div>
+				<a href="https://youtu.be/Ka77djMkSwg?si=5yxzBQfwzxlk0unG">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZSoN0PkqajCSfsSJT8C0zd9kgJ5zI-JR_K7BOJ3=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">SuperSimpleDev</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>What is a JavaScript Framework? (in detail)</p>
+								<div class="tooltip">
+									What is a JavaScript Framework? (in detail)
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>SuperSimpleDev</p>
+									<div class="tooltip" style="top: -15px">SuperSimpleDev</div>
+								</div>
+								<div>
+									<p class="video-status">
+										158k views <strong>&#183;</strong> 3 years ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-3  -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/2fCKd-BQOhw?si=fVycgSoQ3C-__3Y2"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/2fCKd-BQOhw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdi_NwHxNA_1LS9HVp8swvZBgCeA"
+					/></a>
+					<div>11:28</div>
+				</div>
+				<a href="https://youtu.be/2fCKd-BQOhw?si=fVycgSoQ3C-__3Y2">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZSsLNC7a8ybN9ZxKHGE5s_Azmt3Ldr7IpsYov_XVA=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">THENX</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Home Workout For beginners | Dumbbells Only</p>
+								<div class="tooltip">
+									Home Workout For beginners | Dumbbells Only
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>THENX</p>
+									<div class="tooltip">THENX</div>
+								</div>
+								<div>
+									<p class="video-status">
+										1.5M views <strong>&#183;</strong> 2 years ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-4  -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/TLKxdTmk-zc?si=IikUoZbi0YA9Dpri"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/TLKxdTmk-zc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4kY1SnQP6H8ZihEkQ7I4rDn3QDA"
+					/></a>
+					<div>10:16</div>
+				</div>
+				<a href="https://youtu.be/TLKxdTmk-zc?si=IikUoZbi0YA9Dpri">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZQuHHaBeZLguNLCWri0f7OcERmAL5G2fmYbVaOqPQ=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Motivation Madness</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>
+									The Most Eye Opening 10 Minutes Of Your life | David Goggins
+								</p>
+								<div class="tooltip">
+									The Most Eye Opening 10 Minutes Of Your life | David Goggins
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Motivation Madness</p>
+									<div class="tooltip">Motivation Madness</div>
+								</div>
+								<div>
+									<p class="video-status">
+										17M views <strong>&#183;</strong> 4 years ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-5  -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/YiIsJtIKoR8?si=2jBd4Vz-1N4RIDzS"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/YiIsJtIKoR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiuTcVqqqicvc3wUX8ijMtsjltpA"
+					/></a>
+					<div>22:29</div>
+				</div>
+				<a href="https://youtu.be/YiIsJtIKoR8?si=2jBd4Vz-1N4RIDzS">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/5aQeV9pcJlfuASu7QqoyQm0pwKJak-o4XJOSzTYRp9GqpWsHw6FQQhVnB9XIK5rERo3X_pn8=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Meta Monkeys</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Google Play Storeக்கு வந்த ஆபத்து ???</p>
+								<div class="tooltip">Google Play Storeக்கு வந்த ஆபத்து ???</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Meta Monkeys</p>
+									<div class="tooltip" style="top: -15px">Meta Monkeys</div>
+								</div>
+								<div>
+									<p class="video-status">
+										38k views <strong>&#183;</strong> 1 day ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- video-6 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/QdBZY2fkU-0?si=IkvE0z1NaVZSCmJc"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/QdBZY2fkU-0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBsUIlbe3vsIz8Q1dMp4Jd7EzlHWg"
+					/></a>
+					<div>1:31</div>
+				</div>
+				<a href="https://youtu.be/QdBZY2fkU-0?si=IkvE0z1NaVZSCmJc">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/r7mISTzNbcLem_plduc_SKMh9KUiP8CWnuhS7H4-CCErF4juXxkrK-5_4LOIMeYl-lXAXMUG=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Rockstar Games</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Grand Theft Auto VI trailer 1</p>
+								<div class="tooltip">Grand Theft Auto VI trailer 1</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Rockstar Games</p>
+									<div class="tooltip" style="top: -15px">Rockstar Games</div>
+								</div>
+								<div>
+									<p class="video-status">
+										148M views <strong>&#183;</strong> 10 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- Shorts -->
+		<div class="shorts-grid">
+			<div class="shorts-top">
+				<div class="shorts-top-left">
+					<img src="Icons/Youtube_shorts_icon.svg.png" />
+					<p>Shorts</p>
+				</div>
+				<div class="shorts-top-right">
+					<img src="Icons/x-22.svg" />
+					<div class="tooltip">Not Interested</div>
+				</div>
+			</div>
+
+			<div class="shorts-middle">
+				<!-- Shorts-1 -->
+				<div class="shorts-preview">
+					<div class="shorts-thumbnail">
+						<a
+							href="https://youtube.com/shorts/DBUK71JPkrQ?si=6S3jSEYq8JLxEO0L"
+						>
+							<img
+								src="https://i.ytimg.com/vi/DBUK71JPkrQ/hq720.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLCfWD9j_ZWfeOvU0Vd9PDuG5ZKUTw"
+							/>
+						</a>
+					</div>
+					<a
+						class="shorts-about"
+						href="https://youtube.com/shorts/DBUK71JPkrQ?si=6S3jSEYq8JLxEO0L"
+					>
+						<div class="shorts-preview-bottom-div">
+							<div class="shorts-title">
+								<p>The First Time David Goggins Has FAILED</p>
+								<div class="tooltip">
+									The First Time David Goggins Has FAILED
+								</div>
+								<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							</div>
+							<p class="shorts-status">6.3M views</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Shorts-2 -->
+				<div class="shorts-preview">
+					<div class="shorts-thumbnail">
+						<a
+							href="https://youtube.com/shorts/oq8FaqHPFFE?si=ZFr2sn17gifX5wvP"
+						>
+							<img
+								src="https://i.ytimg.com/vi/oq8FaqHPFFE/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLDSjBaDnEGUG2wlB7STEGdfGYjLAQ"
+							/>
+						</a>
+					</div>
+					<a
+						class="shorts-about"
+						href="https://youtube.com/shorts/oq8FaqHPFFE?si=ZFr2sn17gifX5wvP"
+					>
+						<div class="shorts-preview-bottom-div">
+							<div class="shorts-title">
+								<p>SHOCKING MacBook Hacks 😳 Mac OS Sonoma</p>
+								<div class="tooltip">
+									SHOCKING MacBook Hacks 😳 Mac OS Sonoma
+								</div>
+								<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							</div>
+							<p class="shorts-status">649K views</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Shorts-3 -->
+				<div class="shorts-preview">
+					<div class="shorts-thumbnail">
+						<a
+							href="https://youtube.com/shorts/ROYjOqUGo9A?si=QZ_UnXl02JNUGmNa"
+						>
+							<img
+								src="https://i.ytimg.com/vi/ROYjOqUGo9A/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLDZuTrkqn8FZ2016_aBvNT2ZFECmQ"
+							/>
+						</a>
+					</div>
+					<a
+						class="shorts-about"
+						href="https://youtube.com/shorts/ROYjOqUGo9A?si=QZ_UnXl02JNUGmNa"
+					>
+						<div class="shorts-preview-bottom-div">
+							<div class="shorts-title">
+								<p>Swap Face with This Hidden Filter in Potoshop! #Shorts</p>
+								<div class="tooltip">
+									Swap Face with This Hidden Filter in Potoshop! #Shorts
+								</div>
+								<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							</div>
+							<p class="shorts-status">4.8M views</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Shorts-4 -->
+				<div class="shorts-preview">
+					<div class="shorts-thumbnail">
+						<a
+							href="https://youtube.com/shorts/CDYpmVrjHFw?si=Brnh41K9GBhl9vtU"
+						>
+							<img
+								src="https://i.ytimg.com/vi/CDYpmVrjHFw/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCuLUzPDSzghaeVNlw6XUJjea-lvQ"
+							/>
+						</a>
+					</div>
+					<a
+						class="shorts-about"
+						href="https://youtube.com/shorts/CDYpmVrjHFw?si=Brnh41K9GBhl9vtU"
+					>
+						<div class="shorts-preview-bottom-div">
+							<div class="shorts-title">
+								<p>NO EXCUSES - David Goggins</p>
+								<div class="tooltip">NO EXCUSES - David Goggins</div>
+								<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							</div>
+							<p class="shorts-status">700K views</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Shorts-5 -->
+				<div id="shorts-5" class="shorts-preview">
+					<div class="shorts-thumbnail">
+						<a
+							href="https://youtube.com/shorts/niBxdiapcIw?si=KjvS9AovuhH4JlGO"
+						>
+							<img
+								src="https://i.ytimg.com/vi/niBxdiapcIw/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCll9nQh8ZdqQLMSQa1s5AXSQhfPA"
+							/>
+						</a>
+					</div>
+					<a
+						class="shorts-about"
+						href="https://youtube.com/shorts/niBxdiapcIw?si=KjvS9AovuhH4JlGO"
+					>
+						<div class="shorts-preview-bottom-div">
+							<div class="shorts-title">
+								<p>How fast does my Asus ROG Strix G15 #shorts #viral...</p>
+								<div class="tooltip" style="right: 0">
+									How fast does my Asus ROG Strix G15 #shorts #viral #ytshorts
+									#asus #asusrog
+								</div>
+								<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+							</div>
+							<p class="shorts-status">4.6M views</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="shorts-bottom">
+				<div
+					class="shorts-bottom-left"
+					style="border-bottom: 1px solid rgb(225, 224, 224)"
+				></div>
+				<div class="shorts-bottom-middle">
+					<p>Show more</p>
+					<img src="Icons/down-arrow-5.svg" alt="" />
+				</div>
+				<div
+					class="shorts-bottom-right"
+					style="border-bottom: 1px solid rgb(225, 224, 224)"
+				></div>
+			</div>
+		</div>
+
+		<!-- Videos-2 -->
+		<div style="margin-top: 28px" class="video-grid">
+			<!-- Video-7 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/c9T2Ne10npI?si=cyL3bsE4ni7cQNpc"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/c9T2Ne10npI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3QlAz1mibL5xXT9T6oqP4PVWTFw"
+					/></a>
+					<div>8:46</div>
+				</div>
+				<a href="https://youtu.be/c9T2Ne10npI?si=cyL3bsE4ni7cQNpc">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/e5TOnPobWCCJ4_-TgO7zFntsjc9wLM1rN20ty68ITZs-r6PozjqpohoX8M8rlkOFwxgCJYl6lQ=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Mokka Commentry</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Kung Fu panda 4 Tamil Trailer Breakdown (தமிழ்)</p>
+								<div class="tooltip">
+									Kung Fu panda 4 Tamil Trailer Breakdown (தமிழ்)
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Mokka Commentry</p>
+									<div class="tooltip">Mokka Commentry</div>
+								</div>
+								<div>
+									<p class="video-status">
+										69k views <strong>&#183;</strong> 1 day ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-8 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/ufrFCjERMDc?si=B77P0rc4IBFfCiL-"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/ufrFCjERMDc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6nx1_av2bG4gr7yBK1UtkNrMthQ"
+					/></a>
+					<div>8:0.4</div>
+				</div>
+				<a href="https://youtu.be/ufrFCjERMDc?si=B77P0rc4IBFfCiL-">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZSYZm1hFxUl7H1gYa67XRB2C-SclRLhALlq4BtpIg=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Jeremy Ethier</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>The #1 Workout That BLEW UP My Shoulders (3 Exercies)</p>
+								<div class="tooltip">
+									The #1 Workout That BLEW UP My Shoulders (3 Exercies)
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Jeremy Ethier</p>
+									<div class="tooltip">Jeremy Ethier</div>
+								</div>
+								<div>
+									<p class="video-status">
+										1.4M views <strong>&#183;</strong> 3 weeks ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-9 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/8D_ItZBvbmk?si=ZY0nPzrXJGr4Ys2O"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/8D_ItZBvbmk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCcF1xlIkz6zAuWnRrj2UGf_zkzZg"
+					/></a>
+					<div>21:19</div>
+				</div>
+				<a href="https://youtu.be/8D_ItZBvbmk?si=ZY0nPzrXJGr4Ys2O">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/hU8BRvOY7iVbsesrUuVegLKjBu8FNxsroDpIXx1ErVKzjudKj9U9VtQKHNevwP9PM-RfRTEcwiI=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">cultfitOfficial</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>
+									GET ABS IN 2 WEEKS CHALLENGE | How To Get Six Pack Abs | 6
+									Pack...
+								</p>
+								<div class="tooltip" style="right: 0">
+									GET ABS IN 2 WEEKS CHALLENGE | How To Get Six Pack Abs | 6
+									Pack Abs Workout | Cult Fit | CureFit
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>cultfitOfficial</p>
+									<div class="tooltip">cultfitOfficial</div>
+								</div>
+								<div>
+									<p class="video-status">
+										10M views <strong>&#183;</strong> 3 years ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-10 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/q5qAVmXSecQ?si=TYhWMkmSDrtgs5rD"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/q5qAVmXSecQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoaP4qIgQ1MjCN-iSDOEy7oUL-Vg"
+					/></a>
+					<div>4:41</div>
+				</div>
+				<a href="https://youtu.be/q5qAVmXSecQ?si=TYhWMkmSDrtgs5rD">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZTUVa5AeFd3m5-4fdY2hEaKof3Byp8VruZ0f0FNEA=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Fireship</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Google's Gemini just made GPT-4 look like a baby's toy?</p>
+								<div class="tooltip">
+									Google's Gemini just made GPT-4 look like a baby's toy?
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Fireship</p>
+									<div class="tooltip">Fireship</div>
+								</div>
+								<div>
+									<p class="video-status">
+										1.1M views <strong>&#183;</strong> 7 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-11 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/V8pwsFrMe4s?si=PBFoB84NEnVFP1uG"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/V8pwsFrMe4s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPHUeOujlKkJlfQSDIi2nmAzIXxQ"
+					/></a>
+					<div>16:17</div>
+				</div>
+				<a href="https://youtu.be/V8pwsFrMe4s?si=PBFoB84NEnVFP1uG">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/Z72n1HBCgory8N9NqnAIFAkJpSQrJ0zFpwax7h2ZGf3w5_CaL5DKOBD2j8m8PltqAlRvvrjXEA=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">Parithabangal</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>மிக்ஜாம் பாவங்கள் | Parithabangal</p>
+								<div class="tooltip">மிக்ஜாம் பாவங்கள் | Parithabangal</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>Parithabangal</p>
+									<div class="tooltip" style="top: -15px">Parithabangal</div>
+								</div>
+								<div>
+									<p class="video-status">
+										3M views <strong>&#183;</strong> 4 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+
+			<!-- Video-12 -->
+			<div class="video-preview">
+				<div class="thumbnail-img-div">
+					<a href="https://youtu.be/PkZNo7MFNFg?si=txm0Xa7vgzJL1zi3"
+						><img
+							class="thumbnail"
+							src="https://i.ytimg.com/vi/PkZNo7MFNFg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApFIl4BE7rM2IGt1VjOWW5456--A"
+					/></a>
+					<div>3:26:12</div>
+				</div>
+				<a href="https://youtu.be/PkZNo7MFNFg?si=txm0Xa7vgzJL1zi3">
+					<div class="video-preview-bottom-div">
+						<div class="channel-profile">
+							<img
+								src="https://yt3.ggpht.com/ytc/AIf8zZTDkajQxPa4sjDOW-c3er1szXkSAO-H9TiF4-8u_Q=s68-c-k-c0x00ffffff-no-rj"
+							/>
+							<div class="tooltip">freeCodeCamp.org</div>
+						</div>
+						<div class="text-div">
+							<div class="video-title">
+								<p>Learn JavaScript - Full Course for Beginners</p>
+								<div class="tooltip">
+									Learn JavaScript - Full Course for Beginners
+								</div>
+							</div>
+							<div class="channel-name-video-status">
+								<div class="channel-name">
+									<p>freeCodeCamp.org</p>
+									<div class="tooltip" style="top: -15px">freeCodeCamp.org</div>
+								</div>
+								<div>
+									<p class="video-status">
+										16M views <strong>&#183;</strong> 5 years ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<img class="three-dot" src="Icons/three-dot-icon-5.png" />
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-icon">
+				<div class="footer-icon-img-div">
+					<img style="width: 22px" class="icon-img" src="Icons/s-home.svg" />
+				</div>
+				<p class="footer-icon-text">Home</p>
+			</div>
+
+			<div class="footer-icon">
+				<div class="footer-icon-img-div">
+					<img
+						style="width: 22px"
+						class="icon-img"
+						src="Icons/icons8-youtube-shorts-24.png"
+					/>
+				</div>
+				<p class="footer-icon-text">Shorts</p>
+			</div>
+
+			<div class="footer-icon">
+				<div class="footer-icon-img-div">
+					<img
+						style="width: 22px"
+						class="footer-icon-img"
+						src="Icons//menu_youtube_subscription_icon_197393.png"
+					/>
+				</div>
+				<p class="footer-icon-text">Subscriptions</p>
+			</div>
+
+			<div class="footer-icon">
+				<div class="footer-icon-img-div">
+					<img
+						style="width: 20px"
+						class="icon-img"
+						src="Icons/free-video-library-1781676-1518357.png"
+					/>
+				</div>
+				<p class="footer-icon-text">Library</p>
+			</div>
+		</footer>
+	</body>
+</html>

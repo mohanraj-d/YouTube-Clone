@@ -1,0 +1,257 @@
+.shorts-grid {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.shorts-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shorts-top-left {
+	display: flex;
+	column-gap: 15px;
+	align-items: center;
+}
+.shorts-top-left img {
+	width: 18px;
+}
+
+.shorts-top-left p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.shorts-top-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.15s;
+	position: relative;
+}
+
+.shorts-top-right:hover {
+	background-color: #eaeaea;
+}
+
+.shorts-top-right img {
+	width: 18px;
+	opacity: 0.7;
+}
+
+.shorts-top-right .tooltip {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	text-wrap: nowrap;
+	left: -120px;
+	padding: 10px;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-radius: 4px;
+	opacity: 0;
+	pointer-events: none;
+	text-wrap: nowrap;
+}
+
+.shorts-top-right:hover .tooltip {
+	opacity: 1;
+}
+
+.shorts-middle {
+	display: flex;
+	column-gap: 20px;
+}
+
+.shorts-thumbnail img {
+	width: 235px;
+	height: 451px;
+	border-radius: 12px;
+}
+
+.shorts-preview {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	position: relative;
+}
+
+.shorts-title {
+	position: relative;
+}
+
+.shorts-title p {
+	color: black;
+	font-weight: 500;
+	width: 205px;
+	line-height: 22px;
+}
+
+.shorts-title .three-dot {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	opacity: 0;
+}
+.shorts-preview-bottom-div:hover .three-dot {
+	opacity: 1;
+}
+.shorts-status {
+	font-size: 14px;
+	color: #606060;
+}
+
+.shorts-preview-bottom-div {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+.shorts-bottom {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 0fr 1fr;
+}
+
+.shorts-bottom-middle {
+	padding: 9px 132px;
+	border: 1px solid rgb(225, 225, 225);
+	display: flex;
+	justify-content: center;
+	column-gap: 8px;
+	border-radius: 65px;
+	cursor: pointer;
+	transition: background-color 0.15s;
+}
+
+.shorts-bottom-middle:hover {
+	background-color: rgb(225, 225, 225);
+}
+.shorts-bottom-middle:active {
+	background-color: rgb(200, 200, 200);
+}
+
+.shorts-bottom-middle p {
+	font-size: 15px;
+	font-weight: 500;
+	display: inline-block;
+	text-wrap: nowrap;
+}
+.shorts-bottom-middle img {
+	width: 18px;
+}
+
+/* Active effect on whole video preview */
+/* .shorts-preview:active {
+	background-color: rgba(196, 196, 196, 0.2);
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 5px;
+} */
+
+/* Tooltip */
+.shorts-title .tooltip {
+	position: absolute;
+	padding: 5px 6px;
+	color: rgb(220, 220, 220);
+	background-color: rgba(0, 0, 0, 0.9);
+	font-size: 11px;
+	text-wrap: nowrap;
+	border: 1px outset rgb(179, 179, 179);
+	opacity: 0;
+	transition: opacity 0.15s;
+	pointer-events: none;
+	z-index: 5;
+}
+.shorts-title p:hover + .tooltip {
+	opacity: 1;
+	transition-delay: 0.6s;
+}
+
+@media (max-width: 480px) {
+	.shorts-grid {
+		margin-top: 10px;
+		margin-left: 5px;
+		width: 288px;
+		row-gap: 0px;
+	}
+
+	.shorts-top-left {
+		column-gap: 8px;
+	}
+
+	.shorts-top-left img {
+		width: 14px;
+	}
+
+	.shorts-top-left p {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+  .shorts-top-right img {
+    width: 14px;
+    opacity: 0.9;
+  }
+
+	.shorts-middle {
+		max-width: 400px;
+		column-gap: 10px;
+    overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+  .shorts-middle::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+	.shorts-preview {
+		width: 120px;
+		height: 190px;
+		position: relative;
+	}
+
+	.shorts-thumbnail img {
+		width: 120px;
+		height: 190px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.shorts-about {
+		position: absolute;
+		bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 5px 7px 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+	}
+	.shorts-about P {
+		color: white;
+		font-size: 11px;
+    font-size: 500;
+    width: 120px;
+    line-height: 12px;
+	}
+
+  .shorts-preview-bottom-div>p {
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+	.shorts-bottom {
+		display: none;
+	}
+}
